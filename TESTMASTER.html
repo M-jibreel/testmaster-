@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Task Master</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+
+    button {
+      padding: 5px 10px;
+    }
+
+    .done {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Task Master</h2>
+
+  <input type="text" id="taskInput" placeholder="Enter task">
+  <button onclick="addTask()">Add Task</button>
+
+  <br><br>
+
+  <button onclick="showTasks('Open')">Dashboard</button>
+  <button onclick="showTasks('Done')">Completed</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Status</th>
+        <th>Task</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="taskTable">
+    </tbody>
+  </table>
+
+<script src="Testmaster.js"></script>
+
+</body>
+</html>
